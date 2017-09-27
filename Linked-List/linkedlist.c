@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 struct node {
-    char isbn[13];
+    char isbn[15];
     char bookName[40];
     char author[20];
     int pageNumber;
@@ -12,30 +13,40 @@ struct node {
 
 typedef struct node Node;
 Node *root = NULL;
+Node *current =NULL;
 
-Node insertNode(char*,char*,char*,int);
-void deleteNode(Node *);
-void display();
+Node insertNode(char*,char*,char*,int);  //38
+int bookNumber();                        //58
+void display();                          //67
+bool isEmpty();                          //77
+Node deleteNode(char*);
 Node search(Node *);
-int bookNumber();
+void sort();
+void reverse();
 
 
 int main(){
-   insertNode("9786055029357","Hayvanlardan Tanrılara Sapiens","Noah Harari",402);
-   insertNode("9786055029630","Homo Deus:yarının kısa bir tarihi","Yuval Noah Harari",453);
-   display();
-   printf("Sayı: %d\n",bookNumber());
+    insertNode("9786055029357","Hayvanlardan Tanrılara Sapiens","Noah Harari",402);
+    insertNode("9786055029630","Homo Deus,yarının kısa bir tarihi","Yuval Noah Harari",453);
+    
+    display();
+    printf("\n------------------------\nToplam kitap sayısı: %d\n------------------------\n",bookNumber());
 
 }
 
 Node insertNode(char *isbn,char *bookName,char *author,int pageNumber){
     if (bookNumber() != 0){
-        Node *book = (Node *)malloc(sizeof(Node));
-        strcpy(book->isbn,isbn);
-        strcpy(book->bookName,bookName);
-        strcpy(book->author,author);
-        book->pageNumber = pageNumber;
-        book->next = NULL;
+        current = root;
+        while (current->next != NULL){
+            current = current->next;
+        }
+        current->next = (Node*)malloc(sizeof(Node));
+        current = current->next;
+        strcpy(current->isbn,isbn);
+        strcpy(current->bookName,bookName);
+        strcpy(current->author,author);
+        current->pageNumber = pageNumber;
+        current->next = NULL;
     }
     else{
         root = (Node *)malloc(sizeof(Node));
@@ -58,10 +69,13 @@ int bookNumber(){
 
 void display(){
     int counter=1;
-    Node *current = root;
-    for(current;current != NULL;current=current->next){
-        printf("--------------  %d. Kitap --------------\nISBN: %d\nBook Name: %s\nAuthor: %s\nPage Number: %d\n",
+    current = root;
+    for(current;current != NULL;current=current->next,counter++){
+        printf("--------------  %d. Kitap --------------\nISBN: %s\nBook Name: %s\nAuthor: %s\nPage Number: %d\n\n",
         counter,current->isbn,current->bookName,current->author,current->pageNumber);
-
     }
+}
+
+bool isEmpty(){
+    return root == NULL;
 }
