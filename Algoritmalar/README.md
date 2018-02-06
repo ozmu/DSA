@@ -23,3 +23,28 @@ __**Sonluluk**__: Algoritma, belirli adımdan sonra sonlanmalıdır.
 __**Uygulanabilir**__: Uygun kaynaklarla uygulanabilir olmalıdır.
 
 __**Dilden bağımsız**__: Algoritma, adım adım talimatlardan oluşur, bu talimatlar herhangi bir programlama dilinden bağımsız olmalıdır.
+
+## Algoritmalar nasıl yazılır ?
+
+Algoritma yazmak için sorun ve kaynak bağımlı herhangi bir standart yoktur.
+
+Tüm programlama dillerinin döngüler(for,while), akış kontrol(if-else) vs. gibi temel kod yapıları vardır.
+
+Bu ortak ve herhangi bir programda yaygın olarak kullanılan yapılar algoritma yazmak için kullanılabilir.
+
+Algoritma yazabilmek için öncelikle problemi net olarak belirlememiz gerekmektedir.
+
+#### Hadi Deneyelim!
+
+**Örnek**: 2 sayıyı toplayıp sonucu ekrana yazdıran programın algoritmasını tasarlayalım.
+
+    adım 1 - BAŞLA
+    adım 2 - integer tipinde x,y ve z isimli 3 adet değişken tanımla
+    adım 3 - x ve y'ye bir değer ata
+    adım 4 - x ve y'nin değerlerini topla
+    adım 5 - adım 4'ün çıktısını z değişkenine ata
+    adım 6 - z'yi yazdır
+    adım 7 - DUR
+
+
+Algoritma, programcıya kodun nasıl yazılacağını anlatır. 
