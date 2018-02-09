@@ -7,7 +7,7 @@ Başlık | İçerik
 [Algoritmalar Nasıl Yazılır ?](#nasilyazilir) | Algoritma yazarken nelere dikkat edilmelidir ?
 
 
-# Algoritma Nedir ?<a name="algoritma"></a>
+# <a name="algoritma"></a>Algoritma Nedir ?
 
 Algoritma, bir sorunun çözümü için adım adım geliştirilen çözüm prosedürüdür.
 
@@ -19,7 +19,7 @@ Algoritma çeşitleri:
 * **Güncelleme**, bir veri yapısında bir veriyi güncellemek için kullanılan algoritmalardır.
 * **Silme**, bir veri yapısında belirli bir veriyi silmek için kullanılan algoritmalardır.
 
-## Algoritmalar nasıl olmalıdır ?<a name="ozellikler"></a>
+## <a name="ozellikler"></a>Algoritmalar nasıl olmalıdır ?
 
 __**Kesin ve net**__: Algoritma kesin, net ve temiz olmalıdır. Her adımı, tüm girdi/çıktıları tek bir anlam belirtecek şekilde olmalıdır.
 
@@ -33,7 +33,7 @@ __**Uygulanabilir**__: Uygun kaynaklarla uygulanabilir olmalıdır.
 
 __**Dilden bağımsız**__: Algoritma, adım adım talimatlardan oluşur, bu talimatlar herhangi bir programlama dilinden bağımsız olmalıdır.
 
-## Algoritmalar nasıl yazılır ?<a name="nasilyazilir"></a>
+## <a name="nasilyazilir"></a>Algoritmalar nasıl yazılır ?
 
 Algoritma yazmak için sorun ve kaynak bağımlı herhangi bir standart yoktur.
 
@@ -56,3 +56,15 @@ Algoritma yazabilmek için öncelikle problemi net olarak belirlememiz gerekmekt
 
 Algoritma, programcıya kodun nasıl yazılacağını anlatır.
 
+## <a name="analiz"></a>Algoritmalar nasıl analiz edilir ?
+
+Bilgisayar bilimlerinde temel olarak iki önemli kaynak bulunmaktadır.
+
+* Alan (Hafıza)
+* Zaman (Hız)
+
+Buna göre, bir bilgisayar programı, ne kadar fazla alan kapsıyorsa ve ne kadar yavaş çalışıyorsa, o kadar kötü demektir. Tersine, hızlı çalışan ve az yer kaplayan program ise daha iyi olarak düşünülebilir.
+
+Örneğin, birbiri ile etkileşime giren bir milyon kullanıcının tüm etkileşimlerini grafik hâlinde gösterme ihtiyacımız olduğunu düşünelim. Elimizde işlemi gerçekleştiren iki farklı algoritma var, hangisine göre seçim yaparsınız ?
+
+Tabii ki bu önceliğinize göre değişir, hafıza probleminiz varsa önceliği hafızaya verip en az kaynak tüketen algoritmayı seçersiniz, veya hıza daha fazla önem veriyorsanız daha hızlı olanı seçersiniz. 
