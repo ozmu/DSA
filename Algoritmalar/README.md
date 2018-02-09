@@ -1,4 +1,13 @@
-# Algoritma Nedir ?
+# İçerik
+
+Başlık | İçerik
+--- | --- 
+[Algoritma Nedir?](#algoritma) | Algoritmanın genel tanımı
+[Algoritmalar Nasıl Olmalıdır ?](#ozellikler) | Bir algoritmada olması gereken özellikler
+[Algoritmalar Nasıl Yazılır ?](#nasilyazilir) | Algoritma yazarken nelere dikkat edilmelidir ?
+
+
+# Algoritma Nedir ?<a name="algoritma"></a>
 
 Algoritma, bir sorunun çözümü için adım adım geliştirilen çözüm prosedürüdür.
 
@@ -10,7 +19,7 @@ Algoritma çeşitleri:
 * **Güncelleme**, bir veri yapısında bir veriyi güncellemek için kullanılan algoritmalardır.
 * **Silme**, bir veri yapısında belirli bir veriyi silmek için kullanılan algoritmalardır.
 
-## Algoritmalar nasıl olmalıdır ?
+## Algoritmalar nasıl olmalıdır ?<a name="ozellikler"></a>
 
 __**Kesin ve net**__: Algoritma kesin, net ve temiz olmalıdır. Her adımı, tüm girdi/çıktıları tek bir anlam belirtecek şekilde olmalıdır.
 
@@ -24,7 +33,7 @@ __**Uygulanabilir**__: Uygun kaynaklarla uygulanabilir olmalıdır.
 
 __**Dilden bağımsız**__: Algoritma, adım adım talimatlardan oluşur, bu talimatlar herhangi bir programlama dilinden bağımsız olmalıdır.
 
-## Algoritmalar nasıl yazılır ?
+## Algoritmalar nasıl yazılır ?<a name="nasilyazilir"></a>
 
 Algoritma yazmak için sorun ve kaynak bağımlı herhangi bir standart yoktur.
 
@@ -33,8 +42,6 @@ Tüm programlama dillerinin döngüler(for,while), akış kontrol(if-else) vs. g
 Bu ortak ve herhangi bir programda yaygın olarak kullanılan yapılar algoritma yazmak için kullanılabilir.
 
 Algoritma yazabilmek için öncelikle problemi net olarak belirlememiz gerekmektedir.
-
-#### Hadi Deneyelim!
 
 **Örnek**: 2 sayıyı toplayıp sonucu ekrana yazdıran programın algoritmasını tasarlayalım.
 
@@ -47,4 +54,5 @@ Algoritma yazabilmek için öncelikle problemi net olarak belirlememiz gerekmekt
     adım 7 - DUR
 
 
-Algoritma, programcıya kodun nasıl yazılacağını anlatır. 
+Algoritma, programcıya kodun nasıl yazılacağını anlatır.
+
