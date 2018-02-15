@@ -2,9 +2,10 @@
 
 Başlık | İçerik
 --- | --- 
-[Algoritma Nedir?](#algoritma) | Algoritmanın genel tanımı
+[Algoritma Nedir ?](#algoritma) | Algoritmanın genel tanımı
 [Algoritmalar Nasıl Olmalıdır ?](#ozellikler) | Bir algoritmada olması gereken özellikler
 [Algoritmalar Nasıl Yazılır ?](#nasilyazilir) | Algoritma yazarken nelere dikkat edilmelidir ?
+[Algoritmalar nasıl analiz edilir ?](#analiz) | Algoritmaların performansı nasıl analiz edilir.
 
 
 # <a name="algoritma"></a>Algoritma Nedir ?
